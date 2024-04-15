@@ -1,12 +1,13 @@
 import type { Component } from "solid-js";
 import logo from "./assets/favicon.svg";
 import iphone13Icon from "./assets/iphone13.png";
+import looperIcon from "./assets/looper.svg";
 import { MainList } from "./MainList";
 
 const App: Component = () => {
   return (
     <>
-      <div class="flex flex-col h-full w-fit">
+      <div class="flex flex-col h-full w-fit z-30">
         <header class="m-10 flex items-center gap-2 text-staile text-3xl font-bold">
           <img src={logo} alt="STAILE logo" class="max-w-20" />
           STAILE
@@ -27,8 +28,12 @@ const App: Component = () => {
           </section>
         </main>
       </div>
+
+      <div class="w-0 my-auto">
+        <img class="min-w-[800px] -ml-96" src={looperIcon} />
+      </div>
       <img
-        class="-mr-52 xl:-mr-30 mt-10 max-h-[800px] -ml-10 lg:my-auto"
+        class="-mr-52 xl:-mr-30 2xl:-mr-0 mt-10 max-h-[800px] min-w-fit -ml-12 lg:my-auto z-20"
         src={iphone13Icon}
       />
     </>
