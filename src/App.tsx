@@ -21,7 +21,7 @@ const App: Component = () => {
               Твій онлайн-помічник, який враховує те, що ти хочеш, для зручного
               пошуку одягу
             </p>
-            <button class="my-5 bg-white md:bg-blue-700 lg:bg-red-800 xl:bg-orange-500 2xl:bg-lime-600 rounded-3xl p-4 font-extrabold text-2xl">
+            <button class="my-5 bg-white rounded-3xl p-4 font-extrabold text-2xl">
               Завантажити додаток
             </button>
             <MainList />
