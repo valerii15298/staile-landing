@@ -1,11 +1,17 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    colors: {
-      staile: "#3d4455",
+    fontFamily: {
+      philosopher: ["Philosopher", "sans-serif"],
+      inter: ["Inter", "sans-serif"],
+      mulish: ["Mulish", "sans-serif"],
     },
-    extend: {},
+    extend: {
+      colors: {
+        staile: "#3d4455",
+      },
+    },
   },
   plugins: [],
 };

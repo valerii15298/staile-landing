@@ -2,10 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+#root,
 body {
-  background: linear-gradient(90deg, rgba(180, 188, 204) 75%, #d2d5d8 25%);
+  height: 100%;
+  overflow: auto;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  background-color: rgba(180, 188, 204);
+}
+
+@media (min-width: 768px) {
+  body {
+    background: linear-gradient(to right, rgba(180, 188, 204) 75%, #d2d5d8 25%);
+    background-repeat: no-repeat;
+  }
 }
 
 * {
-  font-family: Inter, sans-serif;
+  box-sizing: border-box;
 }
