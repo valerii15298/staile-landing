@@ -5,20 +5,21 @@
 html,
 #root,
 body {
+  min-height: max(100%, 100vh);
   height: 100%;
   overflow: auto;
 }
 
 #root {
   display: flex;
-  flex-direction: column;
+  overflow-x: hidden;
 }
 
 body {
   background-color: rgba(180, 188, 204);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1023px) {
   body {
     background: linear-gradient(to right, rgba(180, 188, 204) 75%, #d2d5d8 25%);
     background-repeat: no-repeat;
