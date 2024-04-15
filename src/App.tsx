@@ -8,20 +8,20 @@ const App: Component = () => {
   return (
     <>
       <div class="flex flex-col h-full w-fit z-30">
-        <header class="m-10 flex items-center gap-2 text-staile text-3xl font-bold">
+        <header class="mt-5 ml-5 flex items-center gap-2 text-staile text-3xl font-bold">
           <img src={logo} alt="STAILE logo" class="max-w-20" />
           STAILE
         </header>
         <main class="my-auto text-balance">
-          <section class="xl:ml-28 mx-10">
-            <h2 class="my-5 font-inter text-6xl font-extrabold text-staile">
+          <section class="xl:ml-28 mx-5 md:mx-10">
+            <h2 class="my-5 font-inter text-4xl md:text-6xl font-extrabold text-staile">
               Знайди свій ідеальний образ за декілька кліків!
             </h2>
             <p class="font-mulish my-5 text-2xl">
               Твій онлайн-помічник, який враховує те, що ти хочеш, для зручного
               пошуку одягу
             </p>
-            <button class="my-5 bg-white rounded-3xl p-4 font-extrabold text-2xl">
+            <button class="-ml-2 my-5 -md:w-min bg-white rounded-3xl p-4 font-extrabold text-xl md:text-2xl">
               Завантажити додаток
             </button>
             <MainList />
